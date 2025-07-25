@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1BAISER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">👑 1BAISER</h1>
+        <p class="slogan">Rejoignez notre site Web du PLAISIR ILLIMITÉ dès maintenant GRATUITEMENT</p>
+        <p class="subtext">Je m'intéresse à :</p>
+
+        <div class="choices">
+            <div class="choice selected">
+                <span class="icon">🧭</span>
+                <span>TOUS</span>
+            </div>
+            <div class="choice girls">
+                <span class="icon">♀️</span>
+                <span>FILLES</span>
+            </div>
+            <div class="choice boys">
+                <span class="icon">♂️</span>
+                <span>HOMMES</span>
+            </div>
+            <div class="choice trans">
+                <span class="icon">⚧️</span>
+                <span>TRANS</span>
+            </div>
+        </div>
+
+        <button class="age-btn">J'ai plus de 18 ans</button>
+        <a href="#" class="exit-link">Quitter</a>
+
+        <p class="warning-title">ATTENTION :</p>
+        <p class="warning-text">
+            CE SITE WEB CONTIENT DU MATÉRIEL SEXUELLEMENT EXPLICITE. LES MATÉRIAUX DU SITE WEB PEUVENT CONTENIR DU
+            TEXTE,
+            DES IMAGES ET D’AUTRES MÉDIAS VISUELS QUI PEUVENT DÉRANGER LES PERSONNES AYANT CERTAINES SENSIBILITÉS.
+        </p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.querySelector(".age-btn");
+
+            button.addEventListener("click", () => {
+                // Redirection vers une page après confirmation d'âge
+                window.location.href = "index.html";
+            });
+        });
+        document.querySelectorAll('.choice').forEach(choice => {
+            choice.addEventListener('click', () => {
+                document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
+                choice.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+
+</html>

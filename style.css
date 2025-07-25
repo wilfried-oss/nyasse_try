@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.slogan {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subtext {
+    margin: 20px 0 10px;
+    color: #ccc;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.choice {
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.choice.selected {
+    border: 2px solid #ccc;
+}
+
+.choice.girls {
+    background-color: #5a0a1d;
+}
+
+.choice.boys {
+    background-color: #0a2740;
+}
+
+.choice.trans {
+    background-color: #2d1040;
+}
+
+.age-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.exit-link {
+    display: block;
+    margin-bottom: 20px;
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.warning-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.warning-text {
+    font-size: 11px;
+    color: #888;
+    padding: 0 20px;
+}

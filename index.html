@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <script>
+        // Bloque l'accès si l'utilisateur n'a pas encore confirmé son âge
+        if (localStorage.getItem('isAdult') !== 'true') {
+            window.location.href = 'agree.html';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>WELCOME HOME BACK</h1>
+</body>
+
+</html>
