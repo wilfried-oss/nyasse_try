@@ -44,20 +44,23 @@
         </p>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const button = document.querySelector(".age-btn");
 
-            button.addEventListener("click", () => {
-                // Redirection vers une page après confirmation d'âge
-                window.location.href = "index.html";
-            });
-        });
         document.querySelectorAll('.choice').forEach(choice => {
             choice.addEventListener('click', () => {
                 document.querySelectorAll('.choice').forEach(c => c.classList.remove('selected'));
                 choice.classList.add('selected');
             });
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.querySelector(".age-btn");
+
+            button.addEventListener("click", () => {
+                localStorage.setItem('isAdult', 'true');
+                window.location.href = "index.html";
+            });
+        });
+
     </script>
 </body>
 
