@@ -38,8 +38,8 @@ body {
 }
 
 .choice {
-  width: 125px;
-  height: 125px;
+  width: 115px;
+  height: 115px;
   background-color: #1a1a1a;
   border-radius: 20px;
   display: flex;
